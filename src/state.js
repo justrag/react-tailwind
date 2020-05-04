@@ -24,7 +24,7 @@ export const pyramids = {
     size: 3,
     row: 1,
     column: 1,
-    direction: NONE,
+    direction: S,
   },
   '1-2': {
     id: 'big-red-2',
@@ -32,7 +32,7 @@ export const pyramids = {
     size: 3,
     row: 1,
     column: 2,
-    direction: NONE,
+    direction: SW,
   },
   '1-3': {
     id: 'big-red-3',
@@ -40,7 +40,7 @@ export const pyramids = {
     size: 3,
     row: 1,
     column: 3,
-    direction: NONE,
+    direction: SE,
   },
   '2-1': {
     id: 'big-red-4',
@@ -48,7 +48,7 @@ export const pyramids = {
     size: 3,
     row: 2,
     column: 1,
-    direction: NONE,
+    direction: NE,
   },
   '3-1': {
     id: 'big-red-5',
@@ -56,7 +56,7 @@ export const pyramids = {
     size: 3,
     row: 3,
     column: 1,
-    direction: NONE,
+    direction: NW,
   },
   '2-2': {
     id: 'mid-red-1',
@@ -64,7 +64,7 @@ export const pyramids = {
     size: 2,
     row: 2,
     column: 2,
-    direction: NONE,
+    direction: N,
   },
   '2-3': {
     id: 'mid-red-2',
@@ -72,7 +72,7 @@ export const pyramids = {
     size: 2,
     row: 2,
     column: 3,
-    direction: NONE,
+    direction: E,
   },
   '3-2': {
     id: 'mid-red-3',
@@ -80,7 +80,7 @@ export const pyramids = {
     size: 2,
     row: 3,
     column: 2,
-    direction: NONE,
+    direction: W,
   },
   '1-4': {
     id: 'mid-red-4',
@@ -104,7 +104,7 @@ export const pyramids = {
     size: 1,
     row: 1,
     column: 5,
-    direction: NONE,
+    direction: SE,
   },
   '2-4': {
     id: 'small-red-2',
