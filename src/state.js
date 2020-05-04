@@ -10,10 +10,17 @@ import {
   SW,
   W,
   NW,
-  OFFBOARD,
+  CHOOSING_SOURCE,
 } from './constants';
 
 import { range } from './lib';
+
+export const step = CHOOSING_SOURCE;
+
+export const turn = 1;
+
+//export const player = RED;
+export const player = BLUE;
 
 export const board = range(1, 8).reduce((result, row) => [...result, ...range(1, 8).map(column => ({ row, column }))], []);
 

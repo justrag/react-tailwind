@@ -13,19 +13,19 @@ const twRotation = {
   NW: '-rotate-135',
 }
 
-const twSize = { 1: 'text-xl', 2: 'text-2xl', 3: 'text-3xl' };
+const twSize = { 1: 'text-2xl', 2: 'text-3xl', 3: 'text-4xl' };
 
 const arrows = { 1: "\u2191", 2: "\u21d1", 3: "\u290a" };
 
-const Pyramid = ({ color, size, direction }) => {
+const Pyramid = ({ player, color, size, direction }) => {
   console.log({ color, size, direction });
   return <div
     className={`
     pyramid
-     bold text-${color}-800 ${twSize[size]}
+     bold text-${color}-800 ${player === color ? `hover:text-${color}-200` : ''} ${twSize[size]}
      transform ${twRotation[direction]}
      text-center
-     `}>{arrows[size]}
+     `}>{direction === 'NONE' ? "o".repeat(size) : arrows[size]}
   </div>;
 }
 export default Pyramid;
