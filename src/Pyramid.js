@@ -1,5 +1,6 @@
 import React from 'react';
 import './pyramid.css';
+import { arrows, bullet } from './constants';
 
 const twRotation = {
   NONE: 'rotate-0',
@@ -15,17 +16,15 @@ const twRotation = {
 
 const twSize = { 1: 'text-2xl', 2: 'text-3xl', 3: 'text-4xl' };
 
-const arrows = { 1: "\u2191", 2: "\u21d1", 3: "\u290a" };
-
-const Pyramid = ({ player, color, size, direction }) => {
-  console.log({ color, size, direction });
-  return <div
+const Pyramid = ({ isSourceable, isSource, color, size, direction }) =>
+  <div
     className={`
-    pyramid
-     bold text-${color}-800 ${player === color ? `hover:text-${color}-200` : ''} ${twSize[size]}
+     bold text-${color}-800 ${twSize[size]} text-center
      transform ${twRotation[direction]}
-     text-center
-     `}>{direction === 'NONE' ? "o".repeat(size) : arrows[size]}
+     ${isSourceable ? `hover:text-${color}-200` : ''}
+     ${isSourceable ? `cursor-pointer` : 'cursor-not-allowed'}
+     ${isSource ? `text-shadow-yelloworange` : 'text-shadow-blackwhite'}
+     `}>
+    {direction === 'NONE' ? bullet.repeat(size) : arrows[size]}
   </div>;
-}
 export default Pyramid;

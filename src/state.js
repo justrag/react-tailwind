@@ -11,11 +11,24 @@ import {
   W,
   NW,
   CHOOSING_SOURCE,
+  CHOOSING_TARGET,
+  AWAITING_CONFIRMATION,
+  CHOOSING_ORIENTATION,
 } from './constants';
 
 import { range } from './lib';
 
-export const step = CHOOSING_SOURCE;
+//export const step = CHOOSING_SOURCE;
+
+// export const step = CHOOSING_TARGET;
+// export const source = { row: 7, column: 5 };
+
+export const step = CHOOSING_ORIENTATION
+export const source = { row: 7, column: 5 };
+export const target = { row: 5, column: 3 };
+
+//export const step = AWAITING_CONFIRMATION;
+
 
 export const turn = 1;
 
@@ -23,6 +36,9 @@ export const turn = 1;
 export const player = BLUE;
 
 export const board = range(1, 8).reduce((result, row) => [...result, ...range(1, 8).map(column => ({ row, column }))], []);
+board[43].isTargettable = true;
+board[34].isTargettable = true;
+board[25].isTargettable = true;
 
 export const pyramids = {
   '1-1': {
