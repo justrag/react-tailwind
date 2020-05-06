@@ -28,7 +28,9 @@ export const source = { row: 7, column: 5 };
 export const target = { row: 5, column: 3 };
 
 //export const step = AWAITING_CONFIRMATION;
-
+// export const source = { row: 7, column: 5 };
+// export const target = { row: 5, column: 3 };
+// export const orientation = SW;
 
 export const turn = 1;
 

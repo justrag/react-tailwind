@@ -11,7 +11,7 @@ const App = () => (
   <>
     <h1 className="text-center text-purple-500 bold-100">Pikemen</h1>
     <h2 className="text-center text-purple-500 bold-100">Turn: {turn} (<span className={`text-white-800 bg-${player}-800`}>{player}</span> player)</h2>
-    <Board source={source} target={target} player={player} board={board} pyramids={pyramids} />
+    <Board board={board} />
     <Step step={step} />
   </>
 );
