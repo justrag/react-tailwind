@@ -18,14 +18,15 @@ import {
 
 import { range } from './lib';
 
-//export const step = CHOOSING_SOURCE;
+// export const step = CHOOSING_SOURCE;
 
-// export const step = CHOOSING_TARGET;
-// export const source = { row: 7, column: 5 };
-
-export const step = CHOOSING_ORIENTATION
+export const step = CHOOSING_TARGET;
 export const source = { row: 7, column: 5 };
-export const target = { row: 5, column: 3 };
+export const target = undefined;
+
+//export const step = CHOOSING_ORIENTATION
+// export const source = { row: 7, column: 5 };
+// export const target = { row: 5, column: 3 };
 
 //export const step = AWAITING_CONFIRMATION;
 // export const source = { row: 7, column: 5 };

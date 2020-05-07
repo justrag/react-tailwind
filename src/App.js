@@ -5,7 +5,7 @@ import './tailwind.generated.css';
 import Board from './Board';
 import Step from './Step';
 
-import { step, turn, source, target, player, board, pyramids } from './state';
+import { step, turn, player, board } from './state';
 
 const App = () => (
   <>
