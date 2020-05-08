@@ -18,17 +18,25 @@ import {
 
 import { range } from './lib';
 
+export const board = range(1, 8).reduce((result, row) => [...result, ...range(1, 8).map(column => ({ row, column }))], []);
+
 // export const step = CHOOSING_SOURCE;
 
-export const step = CHOOSING_TARGET;
-export const source = { row: 7, column: 5 };
-export const target = undefined;
-
-//export const step = CHOOSING_ORIENTATION
+// export const step = CHOOSING_TARGET;
 // export const source = { row: 7, column: 5 };
-// export const target = { row: 5, column: 3 };
+// export const target = undefined;
+// board[43].isTargettable = true;
+// board[34].isTargettable = true;
+// board[25].isTargettable = true;
 
-//export const step = AWAITING_CONFIRMATION;
+export const step = CHOOSING_ORIENTATION
+export const source = { row: 7, column: 5 };
+export const target = { row: 5, column: 3 };
+board[43].isOnPath = true;
+//board[34].isOnPath = true;
+//board[25].isOnPath = true;
+
+// export const step = AWAITING_CONFIRMATION;
 // export const source = { row: 7, column: 5 };
 // export const target = { row: 5, column: 3 };
 // export const orientation = SW;
@@ -37,11 +45,6 @@ export const turn = 1;
 
 //export const player = RED;
 export const player = BLUE;
-
-export const board = range(1, 8).reduce((result, row) => [...result, ...range(1, 8).map(column => ({ row, column }))], []);
-board[43].isTargettable = true;
-board[34].isTargettable = true;
-board[25].isTargettable = true;
 
 export const pyramids = {
   '1-1': {
