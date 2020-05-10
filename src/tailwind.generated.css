@@ -6272,6 +6272,10 @@ video {
   cursor: not-allowed;
 }
 
+.cursor-crosshair {
+  cursor: crosshair;
+}
+
 .block {
   display: block;
 }
@@ -6592,6 +6596,10 @@ video {
 
 .font-mono {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-amarante {
+  font-family: Amarante;
 }
 
 .font-hairline {
@@ -21006,6 +21014,10 @@ video {
     cursor: not-allowed;
   }
 
+  .sm\:cursor-crosshair {
+    cursor: crosshair;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -21326,6 +21338,10 @@ video {
 
   .sm\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .sm\:font-amarante {
+    font-family: Amarante;
   }
 
   .sm\:font-hairline {
@@ -35709,6 +35725,10 @@ video {
     cursor: not-allowed;
   }
 
+  .md\:cursor-crosshair {
+    cursor: crosshair;
+  }
+
   .md\:block {
     display: block;
   }
@@ -36029,6 +36049,10 @@ video {
 
   .md\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-amarante {
+    font-family: Amarante;
   }
 
   .md\:font-hairline {
@@ -50412,6 +50436,10 @@ video {
     cursor: not-allowed;
   }
 
+  .lg\:cursor-crosshair {
+    cursor: crosshair;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -50732,6 +50760,10 @@ video {
 
   .lg\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .lg\:font-amarante {
+    font-family: Amarante;
   }
 
   .lg\:font-hairline {
@@ -65115,6 +65147,10 @@ video {
     cursor: not-allowed;
   }
 
+  .xl\:cursor-crosshair {
+    cursor: crosshair;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -65435,6 +65471,10 @@ video {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-amarante {
+    font-family: Amarante;
   }
 
   .xl\:font-hairline {

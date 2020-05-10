@@ -9,8 +9,8 @@ import { step, turn, player, board } from './state';
 
 const App = () => (
   <>
-    <h1 className="text-center text-purple-500 bold-100">Pikemen</h1>
-    <h2 className="text-center text-purple-500 bold-100">Turn: {turn} (<span className={`text-white-800 bg-${player}-800`}>{player}</span> player)</h2>
+    <h1 className="text-center text-an-dark-green bold-100">Pikemen</h1>
+    <h2 className="text-center text-an-dark-green bold-100">Turn: {turn} (<span className={`text-white-800 bg-an-dark-${player}`}>{player}</span> player)</h2>
     <Board board={board} />
     <Step step={step} />
   </>

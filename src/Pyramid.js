@@ -16,13 +16,14 @@ const twRotation = {
 
 const twSize = { 1: 'text-2xl', 2: 'text-3xl', 3: 'text-4xl' };
 
-const Pyramid = ({ isSourceable, isSource, color, size, direction }) =>
+const Pyramid = ({ isSourceable, isSource, isTargettable, color, size, direction }) =>
   <div
     className={`
-     bold text-${color}-800 ${twSize[size]} text-center
+     bold text-an-dark-${color} ${twSize[size]} text-center
      transform ${twRotation[direction]}
-     ${isSourceable ? `hover:text-${color}-200` : ''}
+     ${isSourceable ? `hover:text-an-middle-${color}` : ''}
      ${isSourceable ? `cursor-pointer` : 'cursor-not-allowed'}
+     ${isTargettable ? 'cursor-crosshair' : ''}
      ${isSource ? `text-shadow-yelloworange` : 'text-shadow-blackwhite'}
      `}>
     {direction === 'NONE' ? bullet.repeat(size) : arrows[size]}

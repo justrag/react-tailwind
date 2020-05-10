@@ -26,6 +26,12 @@ module.exports = {
         'an-yellow': '#e5bc6a',
         'an-maize': '#e1b578',
       },
+      fontFamily: {
+        'amarante': ['Amarante'],
+      },
+      cursor: {
+        crosshair: 'crosshair',
+      },
       rotate: {
         '-135': '-135deg',
         '135': '135deg',
