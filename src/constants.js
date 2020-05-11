@@ -26,5 +26,4 @@ export const singleArrow = "\u2191";
 export const doubleArrow = "\u21d1";
 export const tripleArrow = "\u290a";
 export const arrows = { 1: singleArrow, 2: doubleArrow, 3: tripleArrow };
-export const bullet = "\u2022";
-
+export const bullet = "\u2b24";

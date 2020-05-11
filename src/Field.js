@@ -7,7 +7,7 @@ import {
   CHOOSING_ORIENTATION,
   AWAITING_CONFIRMATION,
 } from './constants';
-import { step, source, target, player, pyramids } from './state';
+import { step, source, target, orientation, player, pyramids } from './state';
 import Pyramid from './Pyramid';
 
 const Orientation = ({ children }) => <div className="flex items-center justify-center cursor-pointer hover:text-an-orange">{children}</div>
@@ -77,8 +77,16 @@ const Field = ({ row, column, isTargettable, isOnPath }) => {
   const { color, size, direction } = pyramids[fieldId] ?? {};
   const isSourceable = player === color;
 
+  let capturingPyramid = null;
+  if (isTarget) {
+    const sourceFieldId = `${source.row}-${source.column}`;
+    const { size: sourceSize, color: sourceColor } = pyramids[sourceFieldId] ?? {};
+    capturingPyramid = <Pyramid isCapturing={true} isSourceable={false} isSource={false} isTargettable={false} isTarget={false} color={sourceColor} size={sourceSize} direction={orientation} />
+  }
+
   return <div id={`field-${fieldId}`} key={fieldId} className={classes}>
-    {pyramids[fieldId] && <Pyramid isSourceable={isSourceable} isSource={isSource} isTargettable={isTargettable} color={color} size={size} direction={direction} />}
+    {pyramids[fieldId] && <Pyramid isCapturing={false} isSourceable={isSourceable} isSource={isSource} isTargettable={isTargettable} isTarget={isTarget} color={color} size={size} direction={direction} />}
+    {capturingPyramid}
   </div>;
 }
 

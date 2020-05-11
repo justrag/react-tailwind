@@ -24,23 +24,25 @@ export const board = range(1, 8).reduce((result, row) => [...result, ...range(1,
 // export const source = undefined;
 // export const target = undefined;
 
-export const step = CHOOSING_TARGET;
-export const source = { row: 7, column: 5 };
-export const target = undefined;
-board[43].isTargettable = true;
-board[34].isTargettable = true;
-board[25].isTargettable = true;
+// export const step = CHOOSING_TARGET;
+// export const source = { row: 7, column: 5 };
+// export const target = undefined;
+// board[43].isTargettable = true;
+// board[34].isTargettable = true;
+// board[25].isTargettable = true;
 
 // export const step = CHOOSING_ORIENTATION
 // export const source = { row: 7, column: 5 };
-// export const target = { row: 5, column: 3 };
+// export const target = { row: 4, column: 2 };
 // board[43].isOnPath = true;
+// board[34].isOnPath = true;
 
-// export const step = AWAITING_CONFIRMATION;
-// export const source = { row: 7, column: 5 };
-// export const target = { row: 5, column: 3 };
-// export const orientation = SW;
-// board[43].isOnPath = true;
+export const step = AWAITING_CONFIRMATION;
+export const source = { row: 7, column: 5 };
+export const target = { row: 4, column: 2 };
+export const orientation = SW;
+board[43].isOnPath = true;
+board[34].isOnPath = true;
 
 export const turn = 1;
 
